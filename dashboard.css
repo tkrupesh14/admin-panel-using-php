@@ -20,6 +20,7 @@
     background: var(--main-color);
     left: 0;
     top: 0;
+    z-index: 100;
 }
 .sidebar-brand{
     height: 90px;
@@ -29,6 +30,9 @@
 .sidebar-brand span{
     display: inline-block;
     padding-right: 1rem;
+}
+.sidebar-menu{
+    margin-top: 1rem;
 }
 .sidebar-menu li{
     width: 100%;
@@ -65,6 +69,94 @@
 header{
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    /* position: fixed; */
+    left: 345px;
+    width: calc(100% -345px);
+    top: 0;
+    z-index: 100;
+}
+header h2{
+    color: #222;
+}
+header label span{
+    font-size: 1.7rem;
+    padding-right: 1rem;
 
 }
+.search-weapper {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+.search-weapper span{
+    display: inline-block;
+    padding: 0rem 1rem;
+    font-size: 1.5rem;
+}
+.search-weapper input{
+    height: 100%;
+    padding: .5rem;
+    border: none;
+    outline: none;
+}
+.user-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.user-wrapper img{
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.user-wrapper small{
+    display: inline-block;
+    color: var(--text-gray);
+}
+main{
+    margin-top: 1px;
+    padding: 2rem 1rem;
+    min-height: calc(100vh -90px);
+    background: #f1f5f9;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
+}
+.card-single{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
+}
+.card-single .card-text{
+    font-size: 1rem;
+    color: var(--text-gray)
+
+}   
+.card-single .card-icon{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+.card-single:last-child {
+    background: var(--main-color);
+}
+
+.card-single .card-icon-alt {
+    color: white;
+}
+.card-single .card-text-alt{
+    color: white;
+}
+.card-single .card-head-alt{
+    color: white;
+}
+
