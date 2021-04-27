@@ -8,14 +8,14 @@
     <title>Admin Panel</title>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
-        <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 
 <body>
     <!-- sidebar -->
     <div class="sidebar">
         <div class="sidebar-brand">
-            <h2><span class="lab la-accusoft"> <span  class="brand-text">Accusoft</span></span></h2>
+            <h2><span class="lab la-accusoft"> <span class="brand-text">Accusoft</span></span></h2>
         </div>
         <div class="sidebar-menu">
             <ul>
@@ -65,17 +65,17 @@
         </div>
     </div>
 
-<!-- main content -->
-<div class="main-content">
-    <header>
-        <div class="header-title">
-            <h2>
-            <label for="">
-                <span class="las la-bars"></span>
-            </label>
-            Dashboard
-            </h2>
-        </div>
+    <!-- main content -->
+    <div class="main-content">
+        <header>
+            <div class="header-title">
+                <h2>
+                    <label for="">
+                        <span class="las la-bars"></span>
+                    </label>
+                    Dashboard
+                </h2>
+            </div>
             <div class="search-weapper">
                 <span class="las la-search"></span>
                 <input type="search" placeholder="search here">
@@ -87,40 +87,192 @@
                     <small>Super Admin</small>
                 </div>
             </div>
-    </header>
+        </header>
 
-    <main>
-        <div class="cards">
-            <div class="card-single">
-                <div>
-                    <h1>54</h1>
-                    <span class="card-text">Customers</span>
+        <main>
+            <div class="cards">
+                <div class="card-single">
+                    <div>
+                        <h1>54</h1>
+                        <span class="card-text">Customers</span>
+                    </div>
+                    <span class="las la-users card-icon"></span>
                 </div>
-                <span class="las la-users card-icon"></span>
-            </div>
-            <div class="card-single">
-                <div>
-                    <h1>12</h1>
-                    <span class="card-text">Projects</span>
+                <div class="card-single">
+                    <div>
+                        <h1>12</h1>
+                        <span class="card-text">Projects</span>
+                    </div>
+                    <span class="las la-clipboard-list card-icon"></span>
                 </div>
-                <span class="las la-clipboard-list card-icon"></span>
-            </div>
-            <div class="card-single">
-                <div>
-                    <h1>124</h1>
-                    <span class="card-text">Orders</span>
+                <div class="card-single">
+                    <div>
+                        <h1>124</h1>
+                        <span class="card-text">Orders</span>
+                    </div>
+                    <span class="las la-shopping-bag card-icon"></span>
                 </div>
-                <span class="las la-shopping-bag card-icon"></span>
-            </div>
-            <div class="card-single">
-                <div>
-                    <h1 class="card-head-alt">&#8377;40K</h1>
-                    <span class="card-text card-text-alt">Income</span>
+                <div class="card-single">
+                    <div>
+                        <h1 class="card-head-alt">&#8377;40K</h1>
+                        <span class="card-text card-text-alt">Income</span>
+                    </div>
+                    <span class="las la-wallet card-icon card-icon-alt"></span>
                 </div>
-                <span class="las la-wallet card-icon card-icon-alt"></span>
             </div>
-        </div>
+
+            <div class="recent-grid">
+                <div class="projects">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Recent Projects</h3>
+                            <button>See All <span class="las la-arrow-right"></span></button>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                            <table width="100%">
+                                <thead>
+                                    <tr>
+                                        <td>Project Title</td>
+                                        <td>Department</td>
+                                        <td>Status</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>UI/UX Design</td>
+                                        <td>UI Team</td>
+                                        <td><span class="status purple"></span>Review</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Web Development</td>
+                                        <td>Frontend Team</td>
+                                        <td><span class="status pink"></span>In Progress</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ushop App</td>
+                                        <td>Android Team</td>
+                                        <td><span class="status orange"></span>Pending</td>
+                                    </tr>
+                                    <tr>
+                                        <td>UI/UX Design</td>
+                                        <td>UI Team</td>
+                                        <td><span class="status purple"></span>Review</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Web Development</td>
+                                        <td>Frontend Team</td>
+                                        <td><span class="status pink"></span>In Progress</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ushop App</td>
+                                        <td>Android Team</td>
+                                        <td><span class="status orange"></span>Pending</td>
+                                    </tr>
+                                    <tr>
+                                        <td>UI/UX Design</td>
+                                        <td>UI Team</td>
+                                        <td><span class="status purple"></span>Review</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Web Development</td>
+                                        <td>Frontend Team</td>
+                                        <td><span class="status pink"></span>In Progress</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ushop App</td>
+                                        <td>Android Team</td>
+                                        <td><span class="status orange"></span>Pending</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="customers">
+                    <div class="card">
+                    <div class="card-header">
+                        <h3>New Customers</h3>
+                        <button>See All <span class="las la-arrow-right"></span></button>
+                        </div>
+                        <div class="card-body">
+                            <div class="customer">
+                               <div> <img src="./user.jpg" width="40px" height="40px" alt="">
+                               <div>
+                                   <h4>Lewis S. Cunningham</h4>
+                                   <small>CEO Expert</small>
+                               </div>
+                               </div>
+                               <div>
+                                   <span class="las la-user-circle"></span>
+                                   <span class="las la-comment"></span>
+                                   <span class="las la-phone"></span>
+                               </div>
+                            </div>
+                            <div class="customer">
+                               <div> <img src="./user.jpg" width="40px" height="40px" alt="">
+                               <div>
+                                   <h4>Lewis S. Cunningham</h4>
+                                   <small>CEO Expert</small>
+                               </div>
+                               </div>
+                               <div>
+                                   <span class="las la-user-circle"></span>
+                                   <span class="las la-comment"></span>
+                                   <span class="las la-phone"></span>
+                               </div>
+                            </div>
+                            <div class="customer">
+                               <div> <img src="./user.jpg" width="40px" height="40px" alt="">
+                               <div>
+                                   <h4>Lewis S. Cunningham</h4>
+                                   <small>CEO Expert</small>
+                               </div>
+                               </div>
+                               <div>
+                                   <span class="las la-user-circle"></span>
+                                   <span class="las la-comment"></span>
+                                   <span class="las la-phone"></span>
+                               </div>
+                            </div>
+                            <div class="customer">
+                               <div> <img src="./user.jpg" width="40px" height="40px" alt="">
+                               <div>
+                                   <h4>Lewis S. Cunningham</h4>
+                                   <small>CEO Expert</small>
+                               </div>
+                               </div>
+                               <div>
+                                   <span class="las la-user-circle"></span>
+                                   <span class="las la-comment"></span>
+                                   <span class="las la-phone"></span>
+                               </div>
+                            </div>
+                            <div class="customer">
+                               <div> <img src="./user.jpg" width="40px" height="40px" alt="">
+                               <div>
+                                   <h4>Lewis S. Cunningham</h4>
+                                   <small>CEO Expert</small>
+                               </div>
+                               </div>
+                               <div>
+                                   <span class="las la-user-circle"></span>
+                                   <span class="las la-comment"></span>
+                                   <span class="las la-phone"></span>
+                               </div>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div> -->
+    </div>
+    </div>
     </main>
-</div>
+    </div>
 </body>
+
 </html>
