@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <input type="checkbox" id="nav-toggle">
     <!-- sidebar -->
     <div class="sidebar">
         <div class="sidebar-brand">
@@ -70,7 +71,7 @@
         <header>
             <div class="header-title">
                 <h2>
-                    <label for="">
+                    <label for="nav-toggle">
                         <span class="las la-bars"></span>
                     </label>
                     Dashboard
@@ -130,145 +131,146 @@
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                            <table width="100%">
-                                <thead>
-                                    <tr>
-                                        <td>Project Title</td>
-                                        <td>Department</td>
-                                        <td>Status</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>UI/UX Design</td>
-                                        <td>UI Team</td>
-                                        <td><span class="status purple"></span>Review</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Web Development</td>
-                                        <td>Frontend Team</td>
-                                        <td><span class="status pink"></span>In Progress</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Ushop App</td>
-                                        <td>Android Team</td>
-                                        <td><span class="status orange"></span>Pending</td>
-                                    </tr>
-                                    <tr>
-                                        <td>UI/UX Design</td>
-                                        <td>UI Team</td>
-                                        <td><span class="status purple"></span>Review</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Web Development</td>
-                                        <td>Frontend Team</td>
-                                        <td><span class="status pink"></span>In Progress</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Ushop App</td>
-                                        <td>Android Team</td>
-                                        <td><span class="status orange"></span>Pending</td>
-                                    </tr>
-                                    <tr>
-                                        <td>UI/UX Design</td>
-                                        <td>UI Team</td>
-                                        <td><span class="status purple"></span>Review</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Web Development</td>
-                                        <td>Frontend Team</td>
-                                        <td><span class="status pink"></span>In Progress</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Ushop App</td>
-                                        <td>Android Team</td>
-                                        <td><span class="status orange"></span>Pending</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>Project Title</td>
+                                            <td>Department</td>
+                                            <td>Status</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>UI/UX Design</td>
+                                            <td>UI Team</td>
+                                            <td><span class="status purple"></span>Review</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Web Development</td>
+                                            <td>Frontend Team</td>
+                                            <td><span class="status pink"></span>In Progress</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ushop App</td>
+                                            <td>Android Team</td>
+                                            <td><span class="status orange"></span>Pending</td>
+                                        </tr>
+                                        <tr>
+                                            <td>UI/UX Design</td>
+                                            <td>UI Team</td>
+                                            <td><span class="status purple"></span>Review</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Web Development</td>
+                                            <td>Frontend Team</td>
+                                            <td><span class="status pink"></span>In Progress</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ushop App</td>
+                                            <td>Android Team</td>
+                                            <td><span class="status orange"></span>Pending</td>
+                                        </tr>
+                                        <tr>
+                                            <td>UI/UX Design</td>
+                                            <td>UI Team</td>
+                                            <td><span class="status purple"></span>Review</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Web Development</td>
+                                            <td>Frontend Team</td>
+                                            <td><span class="status pink"></span>In Progress</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ushop App</td>
+                                            <td>Android Team</td>
+                                            <td><span class="status orange"></span>Pending</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="customers">
+                <div class="customers">
                     <div class="card">
-                    <div class="card-header">
-                        <h3>New Customers</h3>
-                        <button>See All <span class="las la-arrow-right"></span></button>
+                        <div class="card-header">
+                            <h3>New Customers</h3>
+                            <button>See All <span class="las la-arrow-right"></span></button>
                         </div>
                         <div class="card-body">
                             <div class="customer">
-                               <div> <img src="./user.jpg" width="40px" height="40px" alt="">
-                               <div>
-                                   <h4>Lewis S. Cunningham</h4>
-                                   <small>CEO Expert</small>
-                               </div>
-                               </div>
-                               <div>
-                                   <span class="las la-user-circle"></span>
-                                   <span class="las la-comment"></span>
-                                   <span class="las la-phone"></span>
-                               </div>
+                                <div class="info">
+                                    <img src="./user.jpg" width="40px" height="40px" alt="">
+                                    <div>
+                                        <h4>Lewis S. Cunningham</h4>
+                                        <small>CEO Expert</small>
+                                    </div>
+                                </div>
+                                <div class="contact">
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comment"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
                             </div>
                             <div class="customer">
-                               <div> <img src="./user.jpg" width="40px" height="40px" alt="">
-                               <div>
-                                   <h4>Lewis S. Cunningham</h4>
-                                   <small>CEO Expert</small>
-                               </div>
-                               </div>
-                               <div>
-                                   <span class="las la-user-circle"></span>
-                                   <span class="las la-comment"></span>
-                                   <span class="las la-phone"></span>
-                               </div>
+                                <div class="info"> <img src="./user.jpg" width="40px" height="40px" alt="">
+                                    <div>
+                                        <h4>Lewis S. Cunningham</h4>
+                                        <small>CEO Expert</small>
+                                    </div>
+                                </div>
+                                <div class="contact">
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comment"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
                             </div>
                             <div class="customer">
-                               <div> <img src="./user.jpg" width="40px" height="40px" alt="">
-                               <div>
-                                   <h4>Lewis S. Cunningham</h4>
-                                   <small>CEO Expert</small>
-                               </div>
-                               </div>
-                               <div>
-                                   <span class="las la-user-circle"></span>
-                                   <span class="las la-comment"></span>
-                                   <span class="las la-phone"></span>
-                               </div>
+                                <div class="info"> <img src="./user.jpg" width="40px" height="40px" alt="">
+                                    <div>
+                                        <h4>Lewis S. Cunningham</h4>
+                                        <small>CEO Expert</small>
+                                    </div>
+                                </div>
+                                <div class="contact">
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comment"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
                             </div>
                             <div class="customer">
-                               <div> <img src="./user.jpg" width="40px" height="40px" alt="">
-                               <div>
-                                   <h4>Lewis S. Cunningham</h4>
-                                   <small>CEO Expert</small>
-                               </div>
-                               </div>
-                               <div>
-                                   <span class="las la-user-circle"></span>
-                                   <span class="las la-comment"></span>
-                                   <span class="las la-phone"></span>
-                               </div>
+                                <div class="info"> <img src="./user.jpg" width="40px" height="40px" alt="">
+                                    <div>
+                                        <h4>Lewis S. Cunningham</h4>
+                                        <small>CEO Expert</small>
+                                    </div>
+                                </div>
+                                <div class="contact">
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comment"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
                             </div>
                             <div class="customer">
-                               <div> <img src="./user.jpg" width="40px" height="40px" alt="">
-                               <div>
-                                   <h4>Lewis S. Cunningham</h4>
-                                   <small>CEO Expert</small>
-                               </div>
-                               </div>
-                               <div>
-                                   <span class="las la-user-circle"></span>
-                                   <span class="las la-comment"></span>
-                                   <span class="las la-phone"></span>
-                               </div>
+                                <div class="info"> <img src="./user.jpg" width="40px" height="40px" alt="">
+                                    <div>
+                                        <h4>Lewis S. Cunningham</h4>
+                                        <small>CEO Expert</small>
+                                    </div>
+                                </div>
+                                <div class="contact">
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comment"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
                             </div>
-                        </div>
-                        </div>
                         </div>
                     </div>
                 </div>
-            
-            </div> -->
+            </div>
+    </div>
+
+    </div>
     </div>
     </div>
     </main>
