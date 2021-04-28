@@ -16,7 +16,7 @@
        <center><h1>Admin Panel Coming Soon</h1></center>
     </div>
      <!-- github fork button -->
-  <a href="https://github.com/tkrupesh14/admin-panel-using-php" class="github-corner" aria-label="View source on GitHub">
+  <a href="https://github.com/tkrupesh14/admin-panel-using-php" target="blank" class="github-corner" aria-label="View source on GitHub">
     <svg width="80" height="80" viewbox="0 0 250 250"
       style="fill:#131315c9; color:#ffe9e9; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
       <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
