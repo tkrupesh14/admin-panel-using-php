@@ -1,29 +1,5 @@
 <!-- php code -->
 
-<?php
-
-
-$error="";
-$success="";
-
-    if(isset($_POST['s'])){
-        $uname=$_POST['uname'];
-$pass=$_POST['pass'];
-    
-        if($uname == "admin"){
-            if($pass == "password"){
-                header('Location: http://localhost/Admin%20panel/dashboard.php');
-            }
-            else{
-                $error="Invalid Password! ";
-                $success=" ";
-            }
-        }else{
-            $error="Invalid Username! ";
-            $success=" ";
-        }
-    }
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -57,8 +33,7 @@ $pass=$_POST['pass'];
                     <input type="number" name="income" placeholder="Enter Income">
                    
                     <input type="submit" name="s" value="Create Panel">
-                    <p style="color:red;"><?php echo $error;?></p>
-                    <p style="color:green;"><?php echo $success;?></p>
+                    
                 </form>
             </div>
         </div>
