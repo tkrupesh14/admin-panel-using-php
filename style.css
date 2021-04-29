@@ -23,7 +23,7 @@ body{
 .container{
     width: 50%;
     height: 400px;
-    background: #fff;
+    background: rgba(255, 255, 255, .5);
     margin: 0 auto;
     border: 2px solid #fff;
     box-shadow: 0 15px 40px rgba(0, 0, 0, .5);
@@ -54,7 +54,7 @@ body{
     margin: 0;
     padding: 0;
     font-weight: bold;
-    color: #a6af13;
+    color: #dd2f6e;
 }
 
 .formbox input{
@@ -64,7 +64,7 @@ body{
 .formbox input[type="text"],
 .formbox input[type="password"]{
     border: none;
-    border-bottom: 2px solid #a6af13;
+    border-bottom: 2px solid #dd2f6e;
     outline: none;
     height: 40px;
 }
@@ -83,13 +83,38 @@ body{
     font-size: 1.2em;
 }
 .formbox input[type="submit"]:hover{
-    background: #a6af13;
+    background: #dd2f6e;
 }
 .formbox a{
     text-decoration: none;
-    color: #a6af13;
+    color: #dd2f6e;
+    font-weight: 800;
 }
 .formbox a:hover{
     text-decoration: none;
     color: #262626;
+}
+@media only screen and (max-width:1200px){
+   .container .left{
+       display: none;
+   }
+   .container .right{
+       width: 100%;
+   }
+   
+}
+@media only screen and (max-width:768px){
+    
+    body{
+        background-repeat: no-repeat;
+        background-size: 2000px;
+    }
+
+    .container{
+        width: 70%;
+        
+    }
+    .formbox{
+        background-color: transparent;
+    }
 }
