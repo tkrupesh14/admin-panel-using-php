@@ -2,53 +2,51 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(./bodybg.jpg);
+    background: #dd2f6e;
     background-size: cover;
     font-family: poppins;
 }
 
 .title{
-    text-align: center;
-    padding: 50px 0 20px;
+    
+    padding-top: 30px;
+    padding-bottom: 50px ;
+    background: #fff;
+    
 }
 
 .title h1{
+    text-align: center;
     margin: 0;
     padding: 0;
     color: #262626;
     text-transform: uppercase;
     font-size: 36px;
+    background: #fff;
+
 
 }
 .container{
-    width: 50%;
+    width: 500px;
     height: 400px;
     background: rgba(255, 255, 255, .5);
     margin: 0 auto;
-    border: 2px solid #fff;
     box-shadow: 0 15px 40px rgba(0, 0, 0, .5);
 }
 
-.container .left{
-    float: left;
-    width: 50%;
-    height: 400px;
-    background: url(./left1.jpg);
-    background-size: cover;
-    box-sizing: border-box;
-}
+
 .container .right{
-    float: right;
-    width: 50%;
+    /* float: right; */
+    width: 100%;
     height: 400px;
     box-sizing: border-box;
 }
 .formbox{
     width: 100%;
-    padding: 80px 40px;
+    padding: 10px 40px;
     box-sizing: border-box;
-    height: 400px;
-    background: #fff;
+    height: 650px;
+    background:#fff;
 }
 .formbox p{
     margin: 0;
@@ -62,14 +60,19 @@ body{
     margin-bottom: 20px;
 }
 .formbox input[type="text"],
-.formbox input[type="password"]{
+.formbox input[type="password"],
+.formbox input[type="number"],
+.formbox select{
+    width: 100%;
+    margin-bottom: 20px;
     border: none;
     border-bottom: 2px solid #dd2f6e;
     outline: none;
     height: 40px;
 }
 .formbox input[type="text"]:focus,
-.formbox input[type="password"]:focus{
+.formbox input[type="password"]:focus
+.formbox input[type="number"]:focus{
     border-bottom: 2px solid #262626;
 }
 
@@ -78,12 +81,15 @@ body{
     outline: none;
     height: 40px;
     color: #fff;
+    border-radius: 50px;
     background: #262626;
     cursor: pointer;
     font-size: 1.2em;
+    transition: background 200ms;
 }
 .formbox input[type="submit"]:hover{
     background: #dd2f6e;
+
 }
 .formbox a{
     text-decoration: none;

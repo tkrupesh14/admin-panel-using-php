@@ -178,9 +178,12 @@ main{
 }
 .card-single .card-text-alt{
     color: white;
+    
 }
 .card-single .card-head-alt{
     color: white;
+    font-size: 1.6rem;
+    
 }
 .recent-grid{
     margin-top: 3.5rem;

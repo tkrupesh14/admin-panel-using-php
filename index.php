@@ -12,7 +12,7 @@ $pass=$_POST['pass'];
     
         if($uname == "admin"){
             if($pass == "password"){
-                header('Location: https://adminlogininphpbytk.herokuapp.com/dashboard.html');
+                header('Location: http://localhost/Admin%20panel/dashboard.php');
             }
             else{
                 $error="Invalid Password! ";
@@ -32,23 +32,31 @@ $pass=$_POST['pass'];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel Using PHP</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
 </head>
 <body>
-    <div class="title">
-        <h1>Sign In Form</h1>
-    </div>
+    
     <div class="container">
-        <div class="left"></div>
+    <div class="title">
+    <h1>Admin Panel Form</h1>
+    </div>
         <div class="right">
             <div class="formbox">
-                <form action="" method="POST">
-                    <p>Username</p>
-                    <input type="text" name="uname" value="" placeholder="Enter Your Username">
-                    <p>Password</p>
-                    <input type="password" name="pass" value="" placeholder="Enter Your Password">
-                    <input type="submit" name="s" value="Sign In">
-                    <a href="#">Forget Password?</a>
+                <form action="dashboard.php" method="POST">
+                    <p>Admin Name</p>
+                    <input type="text" name="aname" value="" placeholder="Enter Your Name">
+                    <p>Company/Shop Name</p>
+                    <input type="text" name="companyname" value="" placeholder="Enter Enter Company/Shop Name">
+                    <p>Customers Count</p>
+                    <input type="number" name="customercount" value="" placeholder="Enter Total Customers Number">
+                    <p>Projects Count</p>
+                    <input type="number" name="projectcount" value="" placeholder="Enter Active Projects Number">
+                    <p>Orders Count</p>
+                    <input type="number" name="ordercount" value="" placeholder="Enter Total Orders Number">
+                    <p>Income</p>
+                    <input type="number" name="income" placeholder="Enter Income">
+                   
+                    <input type="submit" name="s" value="Create Panel">
                     <p style="color:red;"><?php echo $error;?></p>
                     <p style="color:green;"><?php echo $success;?></p>
                 </form>
@@ -56,17 +64,17 @@ $pass=$_POST['pass'];
         </div>
     </div>
      <!-- github fork button -->
-  <a href="https://github.com/tkrupesh14/admin-panel-using-php" class="github-corner" aria-label="View source on GitHub">
+  <a href="https://github.com/tkrupesh14/admin-panel-using-php" class="github-corner" aria-label="View source on GitHub" style="background: transparent;">
     <svg width="80" height="80" viewbox="0 0 250 250"
-      style="fill:#131315c9; color:#ffe9e9; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
-      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+      style="fill:#131315c9; color:#ffe9e9; position: absolute; top: 0; border: 0; right: 0; " aria-hidden="true">
+      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z" fill="#000"></path>
       <path
         d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-        fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm">
+        fill="#dd2f6e" style="transform-origin: 130px 106px;" class="octo-arm">
       </path>
       <path
         d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-        fill="currentColor" class="octo-body">
+        fill="#dd2f6e" class="octo-body">
       </path>
     </svg>
   </a>
